@@ -1,6 +1,7 @@
 <?php
 
-header('Location: http://localhost:8888/uppgift2/') ;
+$message = urlencode("YOU HAVE A NEW TODO");
+		header("Location: http://localhost:8888/uppgift2/?message=".$message);
 
 require 'fetchall.php';
 

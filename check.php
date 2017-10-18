@@ -1,17 +1,17 @@
 <?php
 
-//header('Location: http://localhost:8888/uppgift2/') ;
+$message = urlencode("REMOVED");
+header("Location: http://localhost:8888/uppgift2/?message=".$message);
 
-//require 'fetchall.php'
+require 'fetchall.php';
+
+
     
-    //$statement = $todo->prepare(
-      //  ""
-    //);
+    $statement = $todo->prepare(
+        "DELETE FROM `TODO` WHERE `TODO`.`id` = (:check)"
+    );
 
-    //$statement->execute(array(
-     //   "1" => $_POST["your_check"]
-    //));
+    $statement->execute(array(
+        ":check" => $_GET["acivitiyId"]
+    ));
 
-//UPDATE `TODO` SET `completed` = '1' WHERE `TODO`.`id` = $_POST["your_check"]
-
-//UPDATE `TODO` SET `completed` = '1' WHERE `TODO`.`id` = 13;
