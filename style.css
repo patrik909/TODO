@@ -1,0 +1,44 @@
+body{
+    background: #00b386;
+    
+}
+
+main{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    flex-flow: column;
+    
+}
+
+input{
+    height: 25px;
+    width: 200px;
+    margin: 10px;
+}
+
+.Skicka{
+    width: 440px;
+}
+
+.form_wrapper{
+    display: flex;
+    padding: 10px;
+}
+
+.todos{
+    background: green;
+    width: 400px;
+    padding: 20px;
+}
+
+.dones{
+    background: green;
+    width: 400px;
+    padding: 20px;
+}
+
+button{
+    width: 100%;
+    background: #b3ffb3;
+}
