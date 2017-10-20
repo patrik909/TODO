@@ -8,18 +8,28 @@
 <body>
    
    <?php 
-    
-   require 'fetchall.php';
+       require 'fetchall.php';
     
    ?>
    
+   <header>
+       <div class="banner"></div>
+       <div class="info">
+          <heading>
+           <h2>Create new TODO</h2>
+           </heading>
+       </div>
+   </header>
+   
    <main>
    
-   <form action="form.php" method="post">
+   <form class="what_todo" action="form.php" method="post">
        
-       <textarea rows="4" name="your_todo" placeholder="TO DO"></textarea>
-       <textarea name="your_name" placeholder="NAME"></textarea>
-       <input class="Skicka" type="submit">
+       <textarea name="your_todo" placeholder="TO DO"></textarea>
+       <div class="what_todo_lower">
+       <input type="text" name="your_name" placeholder="NAME">
+           <button class="Skicka" type="submit">SUBMIT</button>
+       </div>
        
    </form>
     
@@ -27,20 +37,14 @@
     
     <div class="your_todos">
     
-       <?php
-        
-    if(isset($_GET['message'])){
-    echo $_GET['message'];
-		}
-        
-        ?>
+       
    
     <h2>YOUR TODOS</h2>
     
    <?php
    
         foreach($todolist as $todos){
-            echo '<div class="todos">' . $todos["title"] . '    -    ' . $todos["createdBy"] . '<form action="check.php" method="get"><button type="submit" value="your_check">Check</button><button type="submit" value="your_delete">Delete</button></form>' . '<input type="hidden" value=' .$todos["id"] . 'name="acivitiyId">' . '</div>' . var_dump($todos["id"]);
+            echo '<div class="todos">' . $todos["title"] . '    -    ' . $todos["createdBy"] . '<form action="check.php" method="get"><button type="submit" value="your_check">Check</button><button type="submit" value="your_delete">Delete</button></form>' . '<input type="hidden" value="' . $todos["id"] . '"' . ' name="id">' . '</div>' . var_dump($todos["id"]);
         }
         
         
