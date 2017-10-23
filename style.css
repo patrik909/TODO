@@ -1,41 +1,165 @@
 body{
-    background: #00b386;
-    
+    background: #b5b467;
+    margin: 0px;
+    font-family: "avenir";
+}
+
+.wrapper{
+    width: 900px;
+    margin: auto;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    background: #deded3;
+    flex-direction: column;
+    margin-bottom: 200px;
+    border-radius: 30px;
+}
+
+.info{
+    height: 80px;
+    background: black;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+heading{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: white;
+    font-size: 1.8em;
 }
 
 main{
-    width: 500px;
-    margin: auto;
-    
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.what_todo{
+    padding: 20px;
 }
 
 textarea{
-    height: 50px;
-    width: 200px;
-    margin: 10px;
-}
-
-.Skicka{
-    width: 440px;
-}
-
-.form_wrapper{
+    box-sizing: border-box;
+    border: 1px solid black;
     padding: 10px;
+    font-size: 1em;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.skicka{
+    font-size: 1em;
+    background: black;
+    color: white;
+    box-sizing: border-box;
+    border: none;
+    height: 40px;
+    width: 30%;
+}
+.skicka:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.what_todo_lower{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 65%;
+    font-size: 1em;
+    height: 40px;
+}
+
+h3{
+    text-align: center;
+    background-color: #e4e100;
+    margin: 20px 40px 20px 40px;
+    padding: 10px 0px;
+}
+
+.left_col{
+    width: 50%;
+    padding: 0px 20px 20px 20px;
+}
+
+.right_col{
+    width: 50%;
+    padding: 0px 20px 20px 20px;
 }
 
 .todos{
-    background: green;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
+}
+
+.upper_todo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topic{
+    font-size: 1.2em;
+    margin: 5px;
+    text-decoration-line: underline;
+    font-weight: 700;
+}
+
+.check{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons{
+    border-radius: 5px;
+    font-size: 0.8em;
+    border: none;
+    color: white;
+    margin: 5px;
+    width: 25px;
+    height: 20px;
+}
+
+button[value=your_check]{
+    background: #398f2e;
+}
+
+button[value=your_check]:hover{
+    background: #42d82f;
+}
+
+button[value=your_delete]{
+    background: #c32828;
+}
+
+button[value=your_delete]:hover{
+    background: #f35b5b;
+}
+
+.content{
+    padding: 10px;
+    width: 90%;
+}
+
+.underline{
+    border-bottom: 1px solid black;
+    margin: auto;
+    width: 90%;
 }
 
 .dones{
-    background: green;
-    width: 400px;
     padding: 20px;
-}
-
-button{
-    width: 100%;
-    background: #b3ffb3;
 }
