@@ -18,6 +18,4 @@
 
     $statement->execute();
 
-
-
     $donelist = $statement->fetchAll(PDO::FETCH_ASSOC);
