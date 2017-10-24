@@ -163,3 +163,19 @@ button[value=your_delete]:hover{
 .dones{
     padding: 20px;
 }
+
+footer{
+    font-size: 1.5em;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+footer a{
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: grey;
+}
