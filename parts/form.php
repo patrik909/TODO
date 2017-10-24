@@ -1,6 +1,6 @@
 <?php
 
-    $message = urlencode("YOU HAVE A NEW TODO!");
+    $message = urlencode("YOU MADE A NEW TODO!");
 
     $message_wrong = urlencode("YOU HAVE FILL TODO & NAME!");
 
