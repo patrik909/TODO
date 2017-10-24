@@ -7,6 +7,6 @@
 
     require 'fetchall.php';
 
-        $statement = $todo->prepare("UPDATE TODO SET completed = '1' WHERE id = :id");
+    $statement = $todo->prepare("UPDATE TODO SET completed = '1' WHERE id = :id");
 
-        $statement->execute(array(":id" => $_GET["id"]));
+    $statement->execute(array(":id" => $_GET["id"]));
